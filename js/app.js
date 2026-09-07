@@ -1,5 +1,5 @@
 /**
- * JTKiaz App — front end
+ * JT Kias App — front end
  * A single small vanilla-JS app. No build step needed to run it —
  * only to regenerate js/data.js from your Excel/CSV (see build-data.js).
  *
@@ -210,7 +210,7 @@
     const sponsorBtn = overlay.querySelector('#playlist-sponsor-btn');
     if (sponsorBtn) {
       const lines = list.map(it => `• ${TYPE_LABEL[it.type] || it.type}: ${it.title}`).join('\n');
-      sponsorBtn.href = waLink(`Hi! I'd like to sponsor these from JTKiaz App:\n${lines}\n\n`);
+      sponsorBtn.href = waLink(`Hi! I'd like to sponsor these from JT Kias App:\n${lines}\n\n`);
     }
     document.body.appendChild(overlay);
   }
@@ -432,7 +432,7 @@
         if (!item.id) return;
         if (seen.has(item.id)) {
           console.warn(
-            `⚠️ JTKiaz App: two ${label} share the id "${item.id}" — ` +
+            `⚠️ JT Kias App: two ${label} share the id "${item.id}" — ` +
             `"${seen.get(item.id)}" and "${item.title || item.text || ''}". ` +
             `Only the first will ever open; fix the id/part_of column in the workbook.`
           );
@@ -580,16 +580,16 @@
     if (!footerCtaTextEl || !footerCtaBtnEl) return;
     const pitches = {
       home: ['Enjoying the studio? <strong>Support Hippy Vibes</strong> directly.', 'Hi! I love what you\'re building at Hippy Vibes Studio 🙏'],
-      books: ['Support a book — every read keeps new chapters coming.', 'Hi! I\'d like to support a book on JTKiaz App 🙏'],
-      poems: ['Moved by a poem? <strong>Sponsor a collection.</strong>', 'Hi! I\'d like to support the poetry on JTKiaz App 🙏'],
-      quotes: ['Support the studio behind these words.', 'Hi! I\'d like to support JTKiaz App 🙏'],
-      music: ['Support a track — spoken word takes time to make.', 'Hi! I\'d like to support the music on JTKiaz App 🙏'],
+      books: ['Support a book — every read keeps new chapters coming.', 'Hi! I\'d like to support a book on JT Kias App 🙏'],
+      poems: ['Moved by a poem? <strong>Sponsor a collection.</strong>', 'Hi! I\'d like to support the poetry on JT Kias App 🙏'],
+      quotes: ['Support the studio behind these words.', 'Hi! I\'d like to support JT Kias App 🙏'],
+      music: ['Support a track — spoken word takes time to make.', 'Hi! I\'d like to support the music on JT Kias App 🙏'],
       blog: ['Enjoy the blog? Support the studio.', 'Hi! I\'d like to support Hippy Vibes Studio 🙏']
     };
     let [html, msg] = pitches[section] || pitches.home;
     if (item) {
       html = `Enjoying <strong>${esc(item)}</strong>? Support it directly.`;
-      msg = `Hi! I'd like to support "${item}" on JTKiaz App 🙏`;
+      msg = `Hi! I'd like to support "${item}" on JT Kias App 🙏`;
     }
     footerCtaTextEl.innerHTML = html;
     footerCtaBtnEl.href = waLink(msg);
@@ -689,7 +689,7 @@
       showToast('❤ Thank you');
     });
 
-    bar.querySelector('[data-role="comment"]').href = waLink(`Hi! I wanted to comment on "${title}" on JTKiaz App: `);
+    bar.querySelector('[data-role="comment"]').href = waLink(`Hi! I wanted to comment on "${title}" on JT Kias App: `);
 
     bar.querySelectorAll('[data-share]').forEach(btn => {
       const kind = btn.dataset.share;
@@ -831,7 +831,7 @@
     card.className = 'promo-popup';
     card.style.setProperty('--book-accent-promo', 'var(--gold)');
     const navTo = promoLinkNav(popup);
-    const waMsg = popup.whatsappMessage || `Hi! I saw the "${popup.title}" pop-up on JTKiaz App 🙏`;
+    const waMsg = popup.whatsappMessage || `Hi! I saw the "${popup.title}" pop-up on JT Kias App 🙏`;
     card.innerHTML = `
       <button class="promo-close" aria-label="Close">✕</button>
       ${popup.image ? `<div class="promo-img"><img src="${esc(coverSrc(popup.image))}" alt="${esc(popup.title)}" loading="lazy" onerror="this.parentElement.remove()"></div>` : ''}
@@ -965,7 +965,7 @@
     const bookStrip = books.map(b => miniCard(coverSrc(b.cover), b.title)).join('');
     const poemStrip = poems.map(p => miniCard(poemImageFor(p), p.title)).join('');
     const quoteStrip = quotes.map(q => `<div class="whats-new-quote">"${esc((q.text || '').slice(0, 90))}${(q.text || '').length > 90 ? '…' : ''}"<em>— ${esc(q.origin || 'Unknown')}</em></div>`).join('');
-    const waHref = waLink("Hi! I just saw the latest releases on JTKiaz App and want to know more 🙏");
+    const waHref = waLink("Hi! I just saw the latest releases on JT Kias App and want to know more 🙏");
     return `
       <div class="whats-new-overlay" id="whats-new-overlay">
         <div class="whats-new-panel">
@@ -1463,8 +1463,8 @@
       <section class="hero wrap">
         <span class="hero-eyebrow hero-cta-eyebrow">Sponsor a Poem, Song, Book or Chapter</span>
         <h1>Faith, story and sound<br><em>in one quiet room.</em></h1>
-        <p class="lede">JTKiaz App is home for J.T. KIAS's books, poems, quotes and spoken word — built to be read, heard, returned to, and <strong>sponsored</strong> so more of it gets made.</p>
-        <a class="btn accent hero-sponsor-btn" href="${waLink("Hi! I'd like to sponsor a poem, song, book or chapter on JTKiaz App 🙏")}" target="_blank" rel="noopener">💛 Sponsor something today</a>
+        <p class="lede">JT Kias App is home for J.T. KIAS's books, poems, quotes and spoken word — built to be read, heard, returned to, and <strong>sponsored</strong> so more of it gets made.</p>
+        <a class="btn accent hero-sponsor-btn" href="${waLink("Hi! I'd like to sponsor a poem, song, book or chapter on JT Kias App 🙏")}" target="_blank" rel="noopener">💛 Sponsor something today</a>
         <div class="hero-stats">
           <button class="hero-stat" data-navto="books" aria-label="See all books"><strong data-count-to="${DATA.books.length}">0</strong><span>Books</span></button>
           <button class="hero-stat" data-navto="books" aria-label="See all chapters"><strong data-count-to="${totalChapters}">0</strong><span>Chapters</span></button>
@@ -1551,10 +1551,10 @@
 
   // ---------------- per-tab header CTA (different pitch per tab — README §16.1) ----------------
   const TAB_HEADER_CTA = {
-    books: { label: '💛 Sponsor a Book', msg: "Hi! I'd like to sponsor a book on JTKiaz App 🙏" },
-    poems: { label: '💛 Sponsor a Poem', msg: "Hi! I'd like to sponsor a poem or spoken word piece on JTKiaz App 🙏" },
-    quotes: { label: '💛 Commission a Quote', msg: "Hi! I'd like to commission an original quote/proverb card on JTKiaz App 🙏" },
-    music: { label: '💛 Sponsor a Song', msg: "Hi! I'd like to sponsor a song or track on JTKiaz App 🙏" },
+    books: { label: '💛 Sponsor a Book', msg: "Hi! I'd like to sponsor a book on JT Kias App 🙏" },
+    poems: { label: '💛 Sponsor a Poem', msg: "Hi! I'd like to sponsor a poem or spoken word piece on JT Kias App 🙏" },
+    quotes: { label: '💛 Commission a Quote', msg: "Hi! I'd like to commission an original quote/proverb card on JT Kias App 🙏" },
+    music: { label: '💛 Sponsor a Song', msg: "Hi! I'd like to sponsor a song or track on JT Kias App 🙏" },
     blog: { label: '💛 Sponsor the Studio', msg: "Hi! I'd like to support the studio behind this blog 🙏" }
   };
   function tabCtaBtnHTML(section) {
