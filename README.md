@@ -1,4 +1,4 @@
-# JTKiaz App
+# JT Kias App
 
 A single web app for Hippy Vibes International Studio — Books, Poems, Quotes, Music
 and Blog in one place, run almost entirely from an Excel file.
@@ -865,7 +865,7 @@ for `openPlaylistPanel()` and `playlistAddBtnHTML()` in `js/app.js`.
 There are two separate footer bars, and they're edited in two different
 places:
 
-1. **The plain-text line** ("Hippy Vibes International Studio · JTKiaz App
+1. **The plain-text line** ("Hippy Vibes International Studio · JT Kias App
    · Update content") — edit it directly in `index.html`, inside
    `<footer class="site-footer">`. It's plain text; change the words, keep
    the `<a href="update-content.html">` link so people can still reach the
@@ -1097,7 +1097,7 @@ sharp and load quickly.
 | **Blog header image** *(optional — not yet wired up; add an `image` column to `the Blog tab` and an `<img>` in `renderBlogDetail()` the same way chapters do)* | Top of a blog post | 1600 × 900 px | 16∶9 | JPG or WebP |
 | **Home hero gallery figures** | Small immersive grid on the home screen (auto-filled from the first 4 books' covers) | Same as book cover (1200 × 1600) | 3∶4 or 4∶6 for the tall first tile | JPG or WebP |
 | **Tab icons** | Next to each tab label in the header nav | Currently inline SVG (any size, vector) — if you'd rather use your own PNG icons, export at 64 × 64 px | 1∶1 | SVG (preferred) or PNG |
-| **JTK logo mark** — new, wired up | Small branding mark now shown in the header (next to "JTKiazApp"), the footer, and as a faint watermark in the bottom-right corner of the home hero, every chapter reader, and every poem reader. One file, `assets/images/branding/jtk-logo.png`, used everywhere (`LOGO_IMAGE` in `js/app.js`) — until that file exists it just quietly doesn't show (no broken-image icon), so the app looks correct with or without it | 512 × 512 px master, transparent background | 1∶1 | PNG (transparent) or SVG |
+| **JTK logo mark** — new, wired up | Small branding mark now shown in the header (next to "JT KiasApp"), the footer, and as a faint watermark in the bottom-right corner of the home hero, every chapter reader, and every poem reader. One file, `assets/images/branding/jtk-logo.png`, used everywhere (`LOGO_IMAGE` in `js/app.js`) — until that file exists it just quietly doesn't show (no broken-image icon), so the app looks correct with or without it | 512 × 512 px master, transparent background | 1∶1 | PNG (transparent) or SVG |
 | **Favicon** — new, wired up | Browser tab icon — `<link rel="icon">` now points at `assets/images/branding/favicon.png` in `index.html` | 512 × 512 px master (browsers generate smaller sizes) | 1∶1 | PNG or ICO |
 | **Social share preview image** *(not currently set — add Open Graph meta tags to `index.html` if you want a preview image when your links are shared)* | WhatsApp/social link previews | 1200 × 630 px | 1.91∶1 | JPG or PNG |
 
