@@ -187,7 +187,7 @@
           <h3>🎵 Your playlist</h3>
           <span class="modal-close" data-close>✕ Close</span>
         </div>
-        <p class="playlist-sub">Books, chapters, poems and songs you've collected — send the list to J.T. KIAS and ask to sponsor them.</p>
+        <p class="playlist-sub">Books, chapters, poems and songs you've collected — send the list to J.T. KIAS and ask to contribute to them.</p>
         <div class="playlist-items">
           ${list.length ? list.map(it => `
             <div class="playlist-item">
@@ -200,7 +200,7 @@
             </div>
           `).join('') : `<div class="empty-state">Nothing yet — tap <strong>+ Playlist</strong> on any book, chapter, poem or song.</div>`}
         </div>
-        ${list.length ? `<a class="btn accent playlist-sponsor-btn" id="playlist-sponsor-btn" target="_blank" rel="noopener">💛 Sponsor this playlist on WhatsApp</a>` : ''}
+        ${list.length ? `<a class="btn accent playlist-sponsor-btn" id="playlist-sponsor-btn" target="_blank" rel="noopener">💛 Contribute to this playlist on WhatsApp</a>` : ''}
       </div>
     `;
     overlay.addEventListener('click', (e) => { if (e.target === overlay || e.target.dataset.close !== undefined) overlay.remove(); });
@@ -581,7 +581,7 @@
     const pitches = {
       home: ['Enjoying the studio? <strong>Support Hippy Vibes</strong> directly.', 'Hi! I love what you\'re building at Hippy Vibes Studio 🙏'],
       books: ['Support a book — every read keeps new chapters coming.', 'Hi! I\'d like to support a book on JT Kias App 🙏'],
-      poems: ['Moved by a poem? <strong>Sponsor a collection.</strong>', 'Hi! I\'d like to support the poetry on JT Kias App 🙏'],
+      poems: ['Moved by a poem? <strong>Contribute to a collection.</strong>', 'Hi! I\'d like to support the poetry on JT Kias App 🙏'],
       quotes: ['Support the studio behind these words.', 'Hi! I\'d like to support JT Kias App 🙏'],
       music: ['Support a track — spoken word takes time to make.', 'Hi! I\'d like to support the music on JT Kias App 🙏'],
       blog: ['Enjoy the blog? Support the studio.', 'Hi! I\'d like to support Hippy Vibes Studio 🙏']
@@ -1461,10 +1461,10 @@
 
     root.innerHTML = `
       <section class="hero wrap">
-        <span class="hero-eyebrow hero-cta-eyebrow">Sponsor a Poem, Song, Book or Chapter</span>
+        <span class="hero-eyebrow hero-cta-eyebrow">Contribute to a Poem, Song, Book or Chapter</span>
         <h1>Faith, story and sound<br><em>in one quiet room.</em></h1>
         <p class="lede">JT Kias App is home for J.T. KIAS's books, poems, quotes and spoken word — built to be read, heard, returned to, and <strong>sponsored</strong> so more of it gets made.</p>
-        <a class="btn accent hero-sponsor-btn" href="${waLink("Hi! I'd like to sponsor a poem, song, book or chapter on JT Kias App 🙏")}" target="_blank" rel="noopener">💛 Sponsor something today</a>
+        <a class="btn accent hero-sponsor-btn" href="${waLink("Hi! I'd like to contribute to a poem, song, book or chapter on JT Kias App 🙏")}" target="_blank" rel="noopener">💛 Contribute to something today</a>
         <div class="hero-stats">
           <button class="hero-stat" data-navto="books" aria-label="See all books"><strong data-count-to="${DATA.books.length}">0</strong><span>Books</span></button>
           <button class="hero-stat" data-navto="books" aria-label="See all chapters"><strong data-count-to="${totalChapters}">0</strong><span>Chapters</span></button>
@@ -1551,11 +1551,11 @@
 
   // ---------------- per-tab header CTA (different pitch per tab — README §16.1) ----------------
   const TAB_HEADER_CTA = {
-    books: { label: '💛 Sponsor a Book', msg: "Hi! I'd like to sponsor a book on JT Kias App 🙏" },
+    books: { label: '💛 Contribute a Book', msg: "Hi! I'd like to contribute a book on JT Kias App 🙏" },
     poems: { label: '💛 Sponsor a Poem', msg: "Hi! I'd like to sponsor a poem or spoken word piece on JT Kias App 🙏" },
     quotes: { label: '💛 Commission a Quote', msg: "Hi! I'd like to commission an original quote/proverb card on JT Kias App 🙏" },
     music: { label: '💛 Sponsor a Song', msg: "Hi! I'd like to sponsor a song or track on JT Kias App 🙏" },
-    blog: { label: '💛 Sponsor the Studio', msg: "Hi! I'd like to support the studio behind this blog 🙏" }
+    blog: { label: '💛 Contribute to the Studio', msg: "Hi! I'd like to support the studio behind this blog 🙏" }
   };
   function tabCtaBtnHTML(section) {
     const c = TAB_HEADER_CTA[section];
@@ -1571,7 +1571,7 @@
         <div class="view-header">
           <div>
             <h2>Books</h2>
-            <p>Fiction and non-fiction, released chapter by chapter. Finish a chapter to unlock the next — sponsor one to help fund the next.</p>
+            <p>Fiction and non-fiction, released chapter by chapter. Finish a chapter to unlock the next — contribute to one to fund the next.</p>
           </div>
           <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
             ${viewToggleHTML('books')}
@@ -1846,7 +1846,7 @@
         <div class="view-header">
           <div>
             <h2>Poems</h2>
-            <p>Micro, short, long and spoken word pieces. Filter by size, hit surprise me, or sponsor one that moves you. The order shuffles every visit so nothing gets buried.</p>
+            <p>Micro, short, long and spoken word pieces. Filter by size, hit surprise me, or sponsor for more. Let's create something neither of us can make alone.</p>
           </div>
           <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
             ${viewToggleHTML('poems')}
@@ -2242,7 +2242,7 @@
         <div class="view-header">
           <div>
             <h2>Music</h2>
-            <p>${list.length} track${list.length === 1 ? '' : 's'} — every player below is live, so press play right where you see it. Scroll for more; each one's a different vibe. Studio time isn't free — sponsor the next one.</p>
+            <p>${list.length} track${list.length === 1 ? '' : 's'}Psalm 33:3 "Sing unto him a new song; play skilfully with a loud noise." Contribute to the next one.</p>
           </div>
           <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
             ${tabCtaBtnHTML('music')}
