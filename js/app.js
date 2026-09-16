@@ -1571,7 +1571,8 @@
         <div class="view-header">
           <div>
             <h2>Books</h2>
-            <p>Fiction and non-fiction, released chapter by chapter. Finish a chapter to unlock the next — contribute to one to fund the next.</p>
+            <p> Job 19:23
+"Oh that my words were now written! oh that they were printed in a book!" Finish a chapter to unlock the next — contribute to one to fund the next.</p>
           </div>
           <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
             ${viewToggleHTML('books')}
@@ -2242,7 +2243,7 @@
         <div class="view-header">
           <div>
             <h2>Music</h2>
-            <p>${list.length} track${list.length === 1 ? '' : 's'}Psalm 33:3 "Sing unto him a new song; play skilfully with a loud noise." Contribute to the next one.</p>
+            <p>${list.length} track${list.length === 1 ? '' : 's'} ::: Psalm 33:3 "Sing unto him a new song; play skilfully with a loud noise." Contribute to the next one.</p>
           </div>
           <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
             ${tabCtaBtnHTML('music')}
