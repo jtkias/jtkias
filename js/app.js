@@ -1464,11 +1464,7 @@
         <span class="hero-eyebrow hero-cta-eyebrow">Contribute to a Poem, Song, Book or Chapter</span>
         <h1>A world of words<br><em>A space for grace.</em></h1>
         <p class="lede">One Hope, One Heart, One God <br><br> Psalm 45:1 <br>
-  "...my tongue is the pen of a ready writer." <br><br>
-  Colossians 3:16 <br>
-  "Let the word of Christ dwell in you richly in all wisdom; teaching and admonishing one another in psalms and hymns and spiritual songs, singing with grace in your hearts to the Lord." <br><br>
- Corinthians 9:7<br>
-"Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver."</p>
+  "...my tongue is the pen of a ready writer."</p>
         <a class="btn accent hero-sponsor-btn" href="${waLink("Hi! I'd like to contribute to a poem, song, book or chapter on JT Kias App 🙏")}" target="_blank" rel="noopener">💛 Contribute to something today</a>
         <div class="hero-stats">
           <button class="hero-stat" data-navto="books" aria-label="See all books"><strong data-count-to="${DATA.books.length}">0</strong><span>Books</span></button>
@@ -1854,8 +1850,6 @@
             <h2>Poems</h2>
             <p>Ephesians 5:19 <br>
 "Speaking to yourselves in psalms and hymns and spiritual songs, singing and making melody in your heart to the Lord;" <br><br>
-Psalm 104:33-34<br>
-"I will sing unto the Lord as long as I live: I will sing praise to my God while I have my being. My meditation of him shall be sweet: I will be glad in the Lord." 
 <br><br>Let's create something neither of us can make alone.</p>
           </div>
           <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
@@ -2097,10 +2091,8 @@ Psalm 104:33-34<br>
           <div>
             <h2>Quotes</h2>
             <p>Psalm 68:31<br>
-"Princes shall come out of Egypt; Ethiopia shall soon stretch out her hands unto God."<br><br>
-Amos 9:7<br>
-"Are ye not as children of the Ethiopians unto me, O children of Israel? saith the Lord. Have not I brought up Israel out of the land of Egypt? and the Philistines from Caphtor, and the Syrians from Kir?"<br><br>
-Pleasant words are as an honeycomb, sweet to the soul, and health to the bones....</p>
+"Princes shall come out of Egypt; Ethiopia shall soon stretch out her hands unto God."<br>
+"Pleasant words are as an honeycomb, sweet to the soul, and health to the bones...."</p>
           </div>
           <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
             ${viewToggleHTML('quotes')}
