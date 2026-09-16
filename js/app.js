@@ -984,7 +984,7 @@
             <div class="whats-new-cta">
               <img class="whats-new-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(waHref)}" alt="Scan to chat on WhatsApp" loading="lazy" onerror="this.style.display='none'">
               <div class="whats-new-cta-copy">
-                <p>Enjoying what's new? Say hi on WhatsApp — sponsor a track, request a poem, or just say you're listening.</p>
+                <p>Enjoying what's new? Say hi on WhatsApp — contribute to a track, request a poem, or just say you're listening.</p>
                 <a class="btn" href="${esc(waHref)}" target="_blank" rel="noopener">💛 Chat on WhatsApp</a>
               </div>
             </div>
