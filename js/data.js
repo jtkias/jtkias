@@ -3,7 +3,7 @@ window.JTKIAZ_DATA = {
   "books": [
     {
       "id": "book001",
-      "title": "The Night I Pimped out My Sister",
+      "title": "The Night My Sister Slept in a Coffin",
       "author": "J.T. KIAS",
       "type": "Fiction",
       "tags": [
@@ -22,7 +22,7 @@ window.JTKIAZ_DATA = {
       "chapters": [
         {
           "number": 1,
-          "title": "The Night I Pimped out My Sister",
+          "title": "The Night My Sister Slept in a Coffin",
           "content": "THE FIRST CHAPTER IS WAITING...\n\nYou've found the story.\n\nBut the story isn't finished yet.{{pop:p1}} \n\nThere are more chapters to develop. More ideas to explore. More of the vision waiting to become real.\n\nYou can help bring them out.\n\nSponsor the development of this book and become part of the creative journey.It sets the tone for honest prayer. {{pop:p2}}",
           "wordCount": 42,
           "image": "chapters/bible-is-amazing-ch1.jpg",
